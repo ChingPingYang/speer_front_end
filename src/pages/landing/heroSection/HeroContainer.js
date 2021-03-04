@@ -9,25 +9,30 @@ import Hero from "./Hero";
 function HeroContainer() {
   const [current, setCurrent] = React.useState(0);
   const { ref, next, prev, jump } = useDistortionEffectCarousel({
-    images: [image3, image2, image1],
+    images: [image1, image2, image3],
     displacmentImage: distortion,
   });
+  const handelSwitchSlide = (index) => {
+    setCurrent(index);
+  };
+  // React.useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrent((prev) => {
+  //       if (prev === 2) {
+  //         return 0;
+  //       } else {
+  //         return prev + 1;
+  //       }
+  //     });
+  //   }, 10000);
+  //   return () => clearInterval(interval);
+  // }, []);
   React.useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => {
-        if (prev === 2) {
-          return 0;
-        } else {
-          return prev + 1;
-        }
-      });
-    }, 10000);
-    return () => clearInterval(interval);
-  }, []);
-  React.useEffect(() => {
-    // jump(current);
+    jump(current);
   }, [current]);
-  return <Hero ref={ref} jump={jump} />;
+  return (
+    <Hero ref={ref} current={current} handelSwitchSlide={handelSwitchSlide} />
+  );
 }
 
 export default HeroContainer;

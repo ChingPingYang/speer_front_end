@@ -8,7 +8,6 @@ const Global = createGlobalStyle`
         font-family:Helvetica,Arial
     }
     body, html{
-        background-color: #F2F4F4;
         width: 100vw;
         height: 100vh;
     }
