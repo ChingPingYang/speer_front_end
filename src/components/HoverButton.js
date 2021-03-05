@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
-import { css } from "styled-components";
 
 function HoverButton({ text, size = "big", path = "/", customClass }) {
   const [coordinate, setCoordinate] = React.useState({ x: 0, y: 0 });

@@ -64,7 +64,7 @@ const ContainWrapper = styled.div`
       text-transform: uppercase;
     }
     .subtitle {
-      color: black;
+      color: ${(props) => props.theme.black};
       margin-bottom: 15px;
       font-size: 1.8rem;
       font-weight: 100;
