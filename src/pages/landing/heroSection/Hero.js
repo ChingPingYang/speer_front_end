@@ -34,7 +34,6 @@ function Hero({ current, handelSwitchSlide }, ref) {
 }
 
 const Wrapper = styled.header`
-  border: solid 4px red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +42,7 @@ const Wrapper = styled.header`
   overflow: hidden;
   padding: 10px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   .sliderBG {
     position: absolute;
     top: 0;

@@ -8,8 +8,7 @@ const Global = createGlobalStyle`
         font-family:Helvetica,Arial
     }
     body, html{
-        width: 100vw;
-        height: 100vh;
+        scroll-behavior: smooth;
     }
    
 `;

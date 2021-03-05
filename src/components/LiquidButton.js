@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 function LiquidButton() {
   return (
-    <Button>
-      <div href="#" className="btn-mix-noborder" data-text="try it now">
+    <Button to="#">
+      <div className="btn-mix-noborder" data-text="try it now">
         try it now
       </div>
     </Button>

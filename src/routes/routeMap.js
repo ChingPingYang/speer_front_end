@@ -1,6 +1,6 @@
 import React from "react";
 const Landing = React.lazy(() => import("../pages/landing/LandingContainer"));
-const Price = React.lazy(() => import("../pages/price/Price"));
+const Pricing = React.lazy(() => import("../pages/pricing/Pricing"));
 
 export const routeMap = [
   {
@@ -9,8 +9,8 @@ export const routeMap = [
     exact: true,
   },
   {
-    component: Price,
-    path: "/price",
+    component: Pricing,
+    path: "/pricing",
   },
   // {
   //     component:Landing,
