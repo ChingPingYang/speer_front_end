@@ -6,7 +6,6 @@ function Yellow() {
 }
 
 const Wrapper = styled.section`
-  border: solid 1px red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,5 +15,6 @@ const Wrapper = styled.section`
   padding: 10px;
   height: 100vh;
   width: 100%;
+  background-color: ${(props) => props.theme.yellow};
 `;
 export default Yellow;

@@ -74,7 +74,7 @@ const MenuCircle = styled.div`
   height: 500px;
   border-radius: 100%;
   transform-origin: center;
-  background-color: red;
+  background-color: #0b0b0b;
   transform: scale(0, 0);
   transition: 0.3s;
   z-index: -1;

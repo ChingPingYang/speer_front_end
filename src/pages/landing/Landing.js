@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Hero from "./heroSection/HeroContainer";
 import Red from "./red/RedContainer";
 import Yellow from "./yellow/YellowContainer";
+import Perks from "./perks/PerksContainer";
+import Reviews from "./reviews/ReviewsContainer";
 
 function Landing() {
   return (
@@ -10,6 +12,8 @@ function Landing() {
       <Hero />
       <Red />
       <Yellow />
+      <Perks />
+      <Reviews />
     </Wrapper>
   );
 }

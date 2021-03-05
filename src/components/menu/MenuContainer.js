@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "./Menu";
 import { withRouter } from "react-router-dom";
+import { theme } from "../../styles/theme";
 
 function MenuContainer({ location }) {
   const [isOpened, setIsOpened] = React.useState(false);
@@ -24,7 +25,7 @@ function MenuContainer({ location }) {
       isSelected: false,
     },
   ]);
-  const [specialColor, setSpecialColor] = React.useState("blue");
+  const [specialColor, setSpecialColor] = React.useState("white");
 
   const handleOpen = () => {
     setIsOpened((prev) => !prev);
@@ -70,12 +71,22 @@ function MenuContainer({ location }) {
           offset >= window.innerHeight &&
           offset < window.innerHeight * 2
         ) {
-          setSpecialColor("yellow");
+          setSpecialColor(theme.red);
         } else if (
           offset >= window.innerHeight * 2 &&
           offset < window.innerHeight * 3
         ) {
-          setSpecialColor("blue");
+          setSpecialColor(theme.yellow);
+        } else if (
+          offset >= window.innerHeight * 3 &&
+          offset < window.innerHeight * 4
+        ) {
+          setSpecialColor("white");
+        } else if (
+          offset >= window.innerHeight * 4 &&
+          offset < window.innerHeight * 5
+        ) {
+          setSpecialColor(theme.blue);
         }
       }
     };
